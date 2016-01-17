@@ -2,7 +2,7 @@
 
 //Public Routes
 
-Route::get('/',['as'    =>  'homepage', function () {   return view('home.index');    }]);
+Route::get('/',['as'    =>  'homepage', function () {   return view('home.abbaIndex');    }]);
 Route::get('/profile/{username}',['as'  =>  'profile',  'uses'  =>  'User\ProfileController@getIndex']);
 Route::get('/about',['as'  =>  'about',  'uses'  =>  'Pages\StaticPagesController@getAboutPage']);
 
