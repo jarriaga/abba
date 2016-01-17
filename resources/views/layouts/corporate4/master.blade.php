@@ -843,61 +843,68 @@
 
                                             <div class="col-md-5th">
                                                 <ul class="list-unstyled">
-                                                    <li><span>GRID</span></li>
-                                                    <li><a href="portfolio-grid-1-columns.html">1 COLUMN</a></li>
-                                                    <li><a href="portfolio-grid-2-columns.html">2 COLUMNS</a></li>
-                                                    <li><a href="portfolio-grid-3-columns.html">3 COLUMNS</a></li>
-                                                    <li><a href="portfolio-grid-4-columns.html">4 COLUMNS</a></li>
-                                                    <li><a href="portfolio-grid-5-columns.html">5 COLUMNS</a></li>
-                                                    <li><a href="portfolio-grid-6-columns.html">6 COLUMNS</a></li>
+
+                                                    <li><a href=''>Aguascalientes</a></li>
+                                                    <li><a href=''>Baja California</a></li>
+                                                    <li><a href=''>Baja California Sur</a></li>
+                                                    <li><a href=''>Campeche</a></li>
+                                                    <li><a href=''>Chiapas</a></li>
+                                                    <li><a href=''>Chihuahua</a></li>
+                                                    <li><a href=''>Coahuila</a></li>
                                                 </ul>
                                             </div>
 
                                             <div class="col-md-5th">
                                                 <ul class="list-unstyled">
-                                                    <li><span>MASONRY</span></li>
-                                                    <li><a href="portfolio-masonry-2-columns.html">2 COLUMNS</a></li>
-                                                    <li><a href="portfolio-masonry-3-columns.html">3 COLUMNS</a></li>
-                                                    <li><a href="portfolio-masonry-4-columns.html">4 COLUMNS</a></li>
-                                                    <li><a href="portfolio-masonry-5-columns.html">5 COLUMNS</a></li>
-                                                    <li><a href="portfolio-masonry-6-columns.html">6 COLUMNS</a></li>
 
+
+                                                    <li><a href=''>Colima</a></li>
+                                                    <li><a href=''>Distrito Federal</a></li>
+                                                    <li><a href=''>Durango</a></li>
+                                                    <li><a href=''>Estado de México</a></li>
+                                                    <li><a href=''>Guanajuato</a></li>
+                                                    <li><a href=''>Guerrero</a></li>
                                                 </ul>
                                             </div>
 
                                             <div class="col-md-5th">
                                                 <ul class="list-unstyled">
-                                                    <li><span>SINGLE</span></li>
-                                                    <li><a href="portfolio-single-extended.html">EXTENDED ITEM</a></li>
-                                                    <li><a href="portfolio-single-parallax.html">PARALLAX IMAGE</a></li>
-                                                    <li><a href="portfolio-single-slider.html">SLIDER GALLERY</a></li>
-                                                    <li><a href="portfolio-single-html5-video.html">HTML5 VIDEO</a></li>
-                                                    <li><a href="portfolio-single-masonry-thumbs.html">MASONRY THUMBS</a></li>
-                                                    <li><a href="portfolio-single-embed-video.html">EMBED VIDEO</a></li>
+
+
+                                                    <li><a href=''>Hidalgo</a></li>
+                                                    <li><a href=''>Jalisco</a></li>
+                                                    <li><a href=''>Michoacán</a></li>
+                                                    <li><a href=''>Morelos</a></li>
+                                                    <li><a href=''>Nayarit</a></li>
+                                                    <li><a href=''>Nuevo León</a></li>
+                                                 </ul>
+                                            </div>
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+
+
+                                                    <li><a href=''>Oaxaca</a></li>
+                                                    <li><a href=''>Puebla</a></li>
+                                                    <li><a href=''>Querétaro</a></li>
+                                                    <li><a href=''>Quintana Roo</a></li>
+                                                    <li><a href=''>San Luis Potosí</a></li>
+                                                    <li><a href=''>Sinaloa</a></li>
                                                 </ul>
                                             </div>
 
                                             <div class="col-md-5th">
                                                 <ul class="list-unstyled">
-                                                    <li><span>LAYOUT</span></li>
-                                                    <li><a href="portfolio-layout-default.html">DEFAULT</a></li>
-                                                    <li><a href="portfolio-layout-aside-left.html">LEFT SIDEBAR</a></li>
-                                                    <li><a href="portfolio-layout-aside-right.html">RIGHT SIDEBAR</a></li>
-                                                    <li><a href="portfolio-layout-aside-both.html">BOTH SIDEBAR</a></li>
-                                                    <li><a href="portfolio-layout-fullwidth.html">FULL WIDTH (100%)</a></li>
-                                                    <li><a href="portfolio-layout-tabfilter.html">TAB FILTER &amp; PAGINATION</a></li>
 
-                                                </ul>
-                                            </div>
 
-                                            <div class="col-md-5th">
-                                                <ul class="list-unstyled">
-                                                    <li><span>LOADING</span></li>
-                                                    <li><a href="portfolio-loading-pagination.html">PAGINATION</a></li>
-                                                    <li><a href="portfolio-loading-jpagination.html">JQUERY PAGINATION</a></li>
-                                                    <li><a href="portfolio-loading-infinite-scroll.html">INFINITE SCROLL</a></li>
-                                                    <li><a href="portfolio-loading-ajax-page.html">AJAX IN PAGE</a></li>
-                                                    <li><a href="portfolio-loading-ajax-modal.html">AJAX IN MODAL</a></li>
+                                                    <li><a href=''>Sonora</a></li>
+                                                    <li><a href=''>Tabasco</a></li>
+                                                    <li><a href=''>Tamaulipas</a></li>
+                                                    <li><a href=''>Tlaxcala</a></li>
+                                                    <li><a href=''>Veracruz</a></li>
+                                                    <li><a href=''>Yucatán</a></li>
+                                                    <li><a href=''>Zacatecas</a></li>
+
                                                 </ul>
                                             </div>
 
