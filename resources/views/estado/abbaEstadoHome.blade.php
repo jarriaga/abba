@@ -19,10 +19,30 @@
 					.shadow-before-3 	= shadow 3 header top
 					.shadow-after-3 	= shadow 3 header bottom
 			-->
+
+<style>
+    @media only screen and (max-width: 767px){
+     #regionInput{
+         position: relative;
+         display: block;
+         width: 100%!important;
+         margin-left: 0px!important;
+         margin-top: 0px!important;
+     }
+    }
+    #regionInput{
+        margin-left: 200px;
+        margin-top: -40px;
+        width: 250px;
+    }
+
+</style>
+
 <section class="page-header dark page-header-xs">
     <div class="container">
 
         <h1>{{$estado}}</h1>
+        <input id="regionInput" type="text" name="src" placeholder="US State" class="form-control typeahead" />
 
         <!-- breadcrumbs -->
         <ol class="breadcrumb">
