@@ -29,21 +29,32 @@
          margin-left: 0px!important;
          margin-top: 0px!important;
      }
+    .divEstadosInput{
+        float: none!important;
+    }
     }
     #regionInput{
-        margin-left: 200px;
-        margin-top: -40px;
+        margin-left: 20px;
+
         width: 250px;
+    }
+    .divEstadosTitle{
+        float: left;
+    }
+    .divEstadosInput{
+        float: left;
     }
 
 </style>
 
 <section class="page-header dark page-header-xs">
     <div class="container">
-
-        <h1>{{$estado}}</h1>
-        <input id="regionInput" type="text" name="src" placeholder="US State" class="form-control typeahead" />
-
+        <div class="divEstadosTitle">
+            <h1>{{$estadoRegiones['nombre']}}</h1>
+        </div>
+        <div class="divEstadosInput">
+            <input id="regionInput" type="text" name="src" placeholder="Escribe tu poblacion" class="form-control typeahead" />
+        </div>
         <!-- breadcrumbs -->
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
@@ -598,6 +609,27 @@
 </section>
 <!-- / -->
 
-
 @endsection
 
+@section('jqueryCode')
+<script type="text/javascript">
+    var regiones = [];
+    jQuery( document ).ready(function( $ ) {
+
+
+        <?php foreach($estadoRegiones['region'] as $region){  ?>
+        regiones.push(' {!! $region['nombre'] !!} ');
+        <?php } ?>
+        var count = 1;
+        function regionRandom(){
+            if(count>5){
+                clearInterval(random);
+            }
+            $('#regionInput').attr('placeholder',regiones[Math.floor(Math.random()*regiones.length)]);
+            count++;
+        }
+
+        var random  =   setInterval(regionRandom, 1000);
+    });
+</script>
+@endsection

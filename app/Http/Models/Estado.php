@@ -26,7 +26,13 @@ class Estado extends MongoDb{
         $instance   =   new static;
         $estados    =   $instance->collection->find();
         return $estados;
+    }
 
+    public static function findBy(  $array  =   null    )
+    {
+        $instance   =   new static;
+        $regionEdo    =   $instance->collection->find($array);
+        return  $regionEdo;
     }
 
 

@@ -131,6 +131,9 @@
 
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
+    @yield('jqueryCode')
+
+    @yield('javascriptCode')
 <!-- STYLESWITCHER - REMOVE
 <script async type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js"></script>
 -->

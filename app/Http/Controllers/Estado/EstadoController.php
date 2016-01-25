@@ -11,11 +11,16 @@ namespace App\Http\Controllers\Estado;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Models\Estado;
 use Illuminate\Support\Facades\Validator;
 
 
 class EstadoController extends Controller {
 
+    /**
+     * @param $estadoId
+     * @return $this|\Illuminate\Http\RedirectResponse
+     */
     function getIndex($estadoId)
     {
         $validator  =   Validator::make(['estado'=>$estadoId],['estado'=>'regex:/(^[A-Za-z0-9 ]+$)+/']);
@@ -24,7 +29,16 @@ class EstadoController extends Controller {
           return  redirect()->route('homepage');
         }
 
-        return view('estado.abbaEstadoHome')->with(['estado'=>$estadoId]);
+        $estadoRegiones       =       Estado::findBy(["identificador"  =>  $estadoId]);
+        //si el estado no fue encontrado entonces lo regresamos al home page
+        if($estadoRegiones->count() <=  0){
+            return  redirect()->route('homepage');
+        }
+        //get the first element of the query
+        $current = $estadoRegiones->next();
+
+
+        return view('estado.abbaEstadoHome')->with(['estadoRegiones'   =>  $current]);
     }
 
 }
