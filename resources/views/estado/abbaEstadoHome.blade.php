@@ -614,22 +614,26 @@
 @section('jqueryCode')
 <script type="text/javascript">
     var regiones = [];
+    var count = 1;
     jQuery( document ).ready(function( $ ) {
 
 
         <?php foreach($estadoRegiones['region'] as $region){  ?>
         regiones.push(' {!! $region['nombre'] !!} ');
         <?php } ?>
-        var count = 1;
+        $( "#regionInput" ).focus();
         function regionRandom(){
-            if(count>5){
-                clearInterval(random);
+            if(count>10){
+                $('#regionInput').attr('placeholder','Escribe tu poblacion');
+                count++;
+                if(count==20){count=1;}
+            }else {
+                $('#regionInput').attr('placeholder', regiones[Math.floor(Math.random() * regiones.length)]);
+                count++;
             }
-            $('#regionInput').attr('placeholder',regiones[Math.floor(Math.random()*regiones.length)]);
-            count++;
         }
 
-        var random  =   setInterval(regionRandom, 1000);
+        var random  =   setInterval(regionRandom, 250);
     });
 </script>
 @endsection
