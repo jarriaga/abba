@@ -2966,6 +2966,7 @@
 								limit:	_limit,
 								remote: {
 									url: _qryURL + '%QUERY',
+									wildcard: '%QUERY'
 								},
  							});
 

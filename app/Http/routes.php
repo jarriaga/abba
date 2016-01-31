@@ -6,9 +6,13 @@ Route::get('/',['as'    =>  'homepage', function () {   return view('home.abbaIn
 Route::get('/profile/{username}',['as'  =>  'profile',  'uses'  =>  'User\ProfileController@getIndex']);
 Route::get('/about',['as'  =>  'about',  'uses'  =>  'Pages\StaticPagesController@getAboutPage']);
 
+Route::get('/autosuggest-region/{estado}',['as'=>'suggestEstados','uses'=>'Estado\EstadoController@getAutoSuggest']);
+
+Route::get('/estado/{estado}',['as'=>'web-page','uses'=>'Estado\EstadoController@getIndex']);
+
 //Routes for non Authenticated users
 Route::group(['middleware'  =>  'guest'],   function(){
-        Route::get('/estado/{estado}',['as'=>'web-page','uses'=>'Estado\EstadoController@getIndex']);
+
 
         Route::get('/signup',['as'=>'signup','uses'=>'User\AuthController@getIndex']);
         Route::post('/signup/save',['as'=>'saveUser','uses'=>'User\AuthController@postSaveUser']);

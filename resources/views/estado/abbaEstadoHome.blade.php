@@ -33,8 +33,12 @@
         float: none!important;
     }
     }
-    #regionInput{
+
+    .divEstadosInput{
         margin-left: 20px;
+    }
+    #regionInput{
+
 
         width: 250px;
     }
@@ -43,6 +47,17 @@
     }
     .divEstadosInput{
         float: left;
+    }
+    section.dark div.autosuggest .tt-menu {
+        border-color: #999;
+        background-color: #FFFFFF;
+    }
+    .tt-suggestion{
+        color:#000;
+    }
+    .tt-menu .tt-suggestion:hover {
+        background-color:#8ab933!important;
+        color: #fff;
     }
 
 </style>
@@ -53,7 +68,9 @@
             <h1>{{$estadoRegiones['nombre']}}</h1>
         </div>
         <div class="divEstadosInput">
-            <input id="regionInput" type="text" name="src" placeholder="Escribe tu poblacion" class="form-control typeahead" />
+            <div class="autosuggest" data-minLength="1" data-queryURL="/autosuggest-region/{{$estadoRegiones['identificador']}}/?limit=10&search=">
+                <input id="regionInput" type="text" name="src" placeholder="Escribe tu poblacion" class="form-control typeahead" />
+            </div>
         </div>
         <!-- breadcrumbs -->
         <ol class="breadcrumb">
