@@ -2958,16 +2958,20 @@
 								return false;
 							}
 
-							/** **/
-							/* Bloodhound (Suggestion Engine) */
+
+
+						/* Bloodhound (Suggestion Engine) */
 							var _typeahead = new Bloodhound({
-								datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+								//datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+
+								datumTokenizer: Bloodhound.tokenizers.whitespace,
 								queryTokenizer: Bloodhound.tokenizers.whitespace,
 								limit:	_limit,
-								remote: {
+								/*remote: {
 									url: _qryURL + '%QUERY',
 									wildcard: '%QUERY'
-								},
+								},*/
+								local:regiones
  							});
 
 							jQuery('.typeahead', _t).typeahead({

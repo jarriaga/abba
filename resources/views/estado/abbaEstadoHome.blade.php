@@ -20,47 +20,7 @@
 					.shadow-after-3 	= shadow 3 header bottom
 			-->
 
-<style>
-    @media only screen and (max-width: 767px){
-     #regionInput{
-         position: relative;
-         display: block;
-         width: 100%!important;
-         margin-left: 0px!important;
-         margin-top: 0px!important;
-     }
-    .divEstadosInput{
-        float: none!important;
-    }
-    }
-
-    .divEstadosInput{
-        margin-left: 20px;
-    }
-    #regionInput{
-
-
-        width: 250px;
-    }
-    .divEstadosTitle{
-        float: left;
-    }
-    .divEstadosInput{
-        float: left;
-    }
-    section.dark div.autosuggest .tt-menu {
-        border-color: #999;
-        background-color: #FFFFFF;
-    }
-    .tt-suggestion{
-        color:#000;
-    }
-    .tt-menu .tt-suggestion:hover {
-        background-color:#8ab933!important;
-        color: #fff;
-    }
-
-</style>
+<link href="assets/css/customize.css" rel="stylesheet" type="text/css" />
 
 <section class="page-header dark page-header-xs">
     <div class="container">
@@ -696,7 +656,7 @@
 
 
         <?php foreach($estadoRegiones['region'] as $region){  ?>
-        regiones.push(' {!! $region['nombre'] !!} ');
+        regiones.push('{!! $region['nombre'] !!}');
         <?php } ?>
         $( "#regionInput" ).focus();
         function regionRandom(){
@@ -711,6 +671,15 @@
         }
 
         var random  =   setInterval(regionRandom, 250);
+
+
+
     });
+
+    $('body').on("mouseover", ".tt-suggestion", function () {
+        $('.tt-suggestion').removeClass('tt-cursor');
+        $(this).addClass('tt-cursor');
+    });
+    
 </script>
 @endsection

@@ -1,0 +1,47 @@
+/* ========================================== */
+/*        /estado/[nombre del estado]         */
+
+@media only screen and (max-width: 767px){
+    #regionInput{
+        position: relative;
+        display: block;
+        width: 100%!important;
+        margin-left: 0px!important;
+        margin-top: 0px!important;
+    }
+    .divEstadosInput{
+        float: none!important;
+    }
+}
+
+.divEstadosInput{
+    margin-left: 20px;
+}
+#regionInput{
+
+
+    width: 250px;
+}
+.divEstadosTitle{
+    float: left;
+}
+.divEstadosInput{
+    float: left;
+}
+section.dark div.autosuggest .tt-menu {
+    border-color: #999;
+    background-color: #FFFFFF;
+}
+section.dark div.autosuggest .tt-suggestion{
+    color:#000;
+}
+section.dark div.autosuggest .tt-menu .tt-suggestion:hover {
+    background-color:#8ab933!important;
+    color: #fff;
+}
+section.dark div.autosuggest .tt-menu  .tt-cursor {
+    background-color:#8ab933!important;
+    color: #fff;
+}
+/*        Fin CSS de pagin estado        */
+/* ========================================== */
