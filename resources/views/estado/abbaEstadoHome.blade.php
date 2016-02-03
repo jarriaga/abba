@@ -673,7 +673,6 @@
         var random  =   setInterval(regionRandom, 250);
 
 
-
     });
 
     $('body').on("mouseover", ".tt-suggestion", function () {

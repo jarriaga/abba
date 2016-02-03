@@ -43,5 +43,12 @@ section.dark div.autosuggest .tt-menu  .tt-cursor {
     background-color:#8ab933!important;
     color: #fff;
 }
+@media only screen and (max-width: 767px){
+    .divEstadosTitle{
+        float: none;
+    }
+}
+
+
 /*        Fin CSS de pagin estado        */
 /* ========================================== */
